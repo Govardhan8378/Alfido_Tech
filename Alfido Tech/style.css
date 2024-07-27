@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+.calculator {
+    background-size: 25%;
+    background-image:url('Alfido_Tech__2\ \(1\).png') ;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(6, 6, 6, 0.1);
+    padding: 20px;
+    background-color: white;
+}
+
+#display {
+    width: 96%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+   
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius:100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    color: black;
+    .calculator{
+        background-color: black;
+    }
+}
+
+.equal-button {
+    background-color: black;
+    color: white;
+    grid-column: span 2;
+}
